@@ -1,0 +1,54 @@
+<h3 class="text-align: center"><u>Cadastro de Serviço</u></h3>
+<div class="row">
+    <form class="col s12" [formGroup]="servicofrom" (ngSubmit)="onSubmit()">
+
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="servicoId" formControlName="idServico" type="text" class="validate">
+                <label for="servicoId">Número de Operação</label>
+            </div>
+            <div class="input-field col s6">
+                <p>
+                    <label>
+                      <input type="checkbox" formControlName="prioridade" checked="checked" />
+                      <span>Prioridade</span>
+                    </label>
+                  </p>
+            </div>
+        </div>
+        
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="dataEntrada" formControlName="dataEntrada" type="date" class="datepicker">
+                <label for="dataEntrada">Data de Entrada</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="dataSaida" formControlName="dataSaida" type="date" class="datepicker">
+                <label for="dataSaida">Data de Saída</label>
+            </div>
+        </div>
+
+        <div class="row">
+            <div class="input-field col s6">
+                <input id="dataEntrada" formControlName="orcamento" type="number" class="datepicker">
+                <label for="dataEntrada">Orçamento</label>
+            </div>
+            <div class="input-field col s6">
+                <input id="dataSaida" formControlName="total" type="number" class="datepicker">
+                <label for="dataSaida">Total</label>
+            </div>
+        </div>
+
+        <button class="btn waves-effect waves-light" type="submit" [disabled]="!servicofrom.valid" name="action">Salvar
+            <i class="material-icons right">send</i>
+        </button>
+
+    </form>
+</div>
+<div class="container">
+    <router-outlet></router-outlet>
+</div>
+
+
+
+<p>cadastro-servico works!</p>
