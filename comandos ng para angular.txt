@@ -1,0 +1,23 @@
+Comandos ng Angular 2
+
+->criar um projeto:
+ng new nome_projeto ou
+ng new nome_projeto --routing
+
+->subir o servidor:
+ng serve
+
+->criar um modulo:
+ng g m nome_modulo
+
+->criar um componente
+ng g c nome_componente
+ng g c diretorio/nome_componente
+
+->criar um serviço:
+ng g s nove_serviço
+ng g s diretorio/nome_serviço
+
+
+->instalar o matirialize:
+https://www.npmjs.com/package/angular2-materialize

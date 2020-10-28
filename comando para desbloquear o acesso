@@ -1,0 +1,8 @@
+comando generico para Desboquear o acesso:
+    sudo chown username:groupname nome_da_pasta
+
+digitar o comando abaixo para verificar o grupo (ir para pasta home e digitar o comando):
+    ls -l
+
+Desboquear o a permissão de acesso
+sudo chown livisghton:livisghton nome_da_pasta -R
